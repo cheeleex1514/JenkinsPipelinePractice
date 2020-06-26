@@ -1,1 +1,1 @@
-# RubyJenkinsPipeline
+# JenkinsPracticePipeline
