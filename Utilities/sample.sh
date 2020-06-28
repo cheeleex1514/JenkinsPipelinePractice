@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# testing webhooks 2
+# testing webhooks 3
 
 echo "[INFO] Executing sample.sh"
