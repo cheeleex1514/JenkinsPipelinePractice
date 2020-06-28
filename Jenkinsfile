@@ -10,7 +10,7 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
-                sh ./Utilities/sample.sh
+                sh './Utilities/sample.sh'
             }
         }
         stage('Deploy') {
