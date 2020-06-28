@@ -11,6 +11,7 @@ stages {
             steps {
                 echo '[INFO] Testing..'
                 sh 'pwd'
+                sh 'whoami'
                 sh './Utilities/sample.sh'
             }
         }
