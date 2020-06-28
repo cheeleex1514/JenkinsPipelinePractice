@@ -12,6 +12,7 @@ stages {
                 echo '[INFO] Testing..'
                 sh 'pwd'
                 sh 'whoami'
+                sh 'ls -l ./Utilities/'
                 sh './Utilities/sample.sh'
             }
         }
