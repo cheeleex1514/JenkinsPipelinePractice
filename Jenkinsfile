@@ -14,6 +14,8 @@ stages {
                 sh 'whoami'
                 sh 'ls -l ./Utilities/'
                 sh './Utilities/sample.sh'
+                sh 'chmod -x ./Utilities/sample.sh'
+                sh 'sh ./Utilities/sample.sh'
             }
         }
         stage('Deploy') {
