@@ -10,6 +10,7 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
+                sh 'pwd'
                 sh './Utilities/sample.sh'
             }
         }
