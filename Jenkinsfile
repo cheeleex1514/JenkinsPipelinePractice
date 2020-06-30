@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools{
+        maven "3.6.3"
+    }
+
 stages {
         stage('Build') {
             steps {
@@ -10,7 +14,7 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
-                sh 'chmod -x ./Utilities/sample.sh | sh ./Utilities/sample.sh'
+                sh 'mvn clean test'
             }
         }
         stage('Deploy') {
