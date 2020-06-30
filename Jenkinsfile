@@ -10,7 +10,9 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
-                sh 'mvn -Dtest=ConsoleParserTest test'
+                withMaven() {
+                    sh 'mvn -Dtest=ConsoleParserTest test'
+                }
             }
         }
         stage('Deploy') {
