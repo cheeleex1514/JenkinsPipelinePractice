@@ -14,7 +14,7 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
-                sh 'mvn -Dtest=ConsoleParserTest test'
+                sh 'mvn clean test'
             }
         }
         stage('Deploy') {
