@@ -10,7 +10,7 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
-                sh 'chmod -x ./Utilities/sample.sh | sh ./Utilities/sample.sh'
+                sh 'mvn -Dtest=ConsoleParserTest test'
             }
         }
         stage('Deploy') {
