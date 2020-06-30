@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JenkinsPipelinePractice" target="11.0.1" />
+      <module name="JenkinsPipelinePractice" target="3.6.1" />
     </bytecodeTargetLevel>
   </component>
 </project>
