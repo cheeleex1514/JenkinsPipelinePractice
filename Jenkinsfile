@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools{
+        maven "3.6.3"
+    }
+
 stages {
         stage('Build') {
             steps {
@@ -10,9 +14,7 @@ stages {
         stage('Test') {
             steps {
                 echo '[INFO] Testing..'
-                withMaven() {
-                    sh 'mvn -Dtest=ConsoleParserTest test'
-                }
+                sh 'mvn -Dtest=ConsoleParserTest test'
             }
         }
         stage('Deploy') {
